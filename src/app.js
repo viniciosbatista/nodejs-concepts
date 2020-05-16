@@ -40,11 +40,11 @@ app.put("/repositories/:id", (request, response) => {
     return response.status(400).json({ error: 'Repository not found!' });
   }
 
-  repository = { 
-    ...repository,
-    title,
-    url,
-    techs
+  repository = {
+    ...repository, 
+    title, 
+    url, 
+    techs 
   };
 
   return response.json(repository);
